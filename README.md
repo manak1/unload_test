@@ -1,4 +1,7 @@
-# unload_test
+# beforeunload_test
+
+Nuxt.jsにおけるbeforeunloadの挙動を確認するレポジトリ。  
+URL: https://5fca4a7dd3e46814973a2fc0--trusting-fermi-11087e.netlify.app/
 
 ## Build Setup
 
