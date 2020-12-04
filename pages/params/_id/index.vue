@@ -65,6 +65,10 @@ export default {
     window.addEventListener("beforeunload", this.confirm);
   },
 
+  destroyed() {
+    window.removeEventListener("beforeunload", this.confirm)
+  },
+
   computed: {
     getCurrentId() {
       return this.$route.params.id;

@@ -58,6 +58,10 @@ export default {
     }
   },
 
+  destroyed() {
+    window.removeEventListener("beforeunload", this.confirm)
+  },
+
   computed: {
     getCurrentPage() {
       return this.$route.query.page 
