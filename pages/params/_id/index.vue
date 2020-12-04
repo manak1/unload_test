@@ -52,13 +52,6 @@ export default {
         this.$router.push(`/params/${Number(this.getCurrentId) - 1}`);
       }
     },
-    
-    confirm(event) {
-      event.preventDefault()
-
-      // IEのみメッセージを変更可能。
-      event.returnValue = ""
-    }
   },
   mounted() {
     window.addEventListener("beforeunload", this.confirm);
