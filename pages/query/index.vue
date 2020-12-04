@@ -19,6 +19,13 @@
         トップへ戻る(aタグ)
       </a>
     </div>
+
+    <article class="mt-10 w-2/3 mx-auto">
+      <p>ページを閉じる、別ページに遷移しようとするとbeforeunloadによって警告が表示されますが、
+        nuxt-linkを使った遷移、$router.push, $router.replaceなどrouterを使用した遷移時には警告が表示されません。
+      </p>
+    </article>
+
   </div>
 </template>
 

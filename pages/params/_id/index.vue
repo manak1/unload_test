@@ -2,7 +2,7 @@
   <div class="pt-10">
     <h2 class="text-4xl">Params使用パターン</h2>
     <p class="text-2xl mt-5">現在のID {{ getCurrentId }}</p>
-    <div class="space-x-5 mt-10">
+    <div class="space-x-6 mt-10">
       <a
         href="#"
         @click.prevent="previousPage"
@@ -27,6 +27,14 @@
         トップへ戻る(aタグ)
       </a>
     </div>
+
+    <article class="mt-10 w-2/3 mx-auto">
+      <p class="text-lg">
+        ページを閉じる、別ページに遷移しようとするとbeforeunloadによって警告が表示されますが、
+        nuxt-linkを使った遷移、$router.push,
+        $router.replaceなどrouterを使用した遷移時には警告が表示されません。
+      </p>
+    </article>
   </div>
 </template>
 
@@ -51,7 +59,7 @@ export default {
       if (this.getCurrentId > 0) {
         this.$router.push(`/params/${Number(this.getCurrentId) - 1}`);
       }
-    },
+    }
   },
   mounted() {
     window.addEventListener("beforeunload", this.confirm);
