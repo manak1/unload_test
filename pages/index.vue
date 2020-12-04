@@ -13,8 +13,8 @@
       <p>
         nuxt.jsにおいてbeforeunloadイベントを利用した際の挙動確認用サイト。
       </p>
-      <a href="https://developer.mozilla.org/ja/docs/Web/API/Window/beforeunload_event">
-      beforeunloadについて
+      <a class="text-blue-600 underline" href="https://developer.mozilla.org/ja/docs/Web/API/Window/beforeunload_event">
+      beforeunloadについてはこちら
       </a>
     </div>
   </div>
